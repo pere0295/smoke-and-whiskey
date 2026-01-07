@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chocolate+Classical+Sans&family=Nuosu+SIL&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Vesper+Libre:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chocolate+Classical+Sans&family=Nuosu+SIL&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Vesper+Libre:wght@400;500;700;900&display=swap");
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -74,7 +76,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: "Alegreya Sans";
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -217,6 +219,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  font-family: "Nuosu SIL", serif;
   font-weight: 500;
   line-height: 1.2;
   color: var(--bs-heading-color);
@@ -5695,7 +5698,7 @@ textarea.form-control-lg {
   z-index: var(--bs-tooltip-zindex);
   display: block;
   margin: var(--bs-tooltip-margin);
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Alegreya Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5805,7 +5808,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Alegreya Sans";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11862,11 +11865,34 @@ textarea.form-control-lg {
 .hero {
   height: 800px;
   background-color: #3F0A29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .rounded-circle {
+  margin: auto;
+  display: block;
+}
+
+.visit {
+  background-image: url(../images/CTA.jpg);
+  height: 600px;
+  background-color: #3F0A29;
   background-repeat: no-repeat;
   background-position: cover;
   background-size: cover;
   display: flex;
   align-items: center;
+}
+
+.nav-button {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=custom.css.map */
